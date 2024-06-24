@@ -1,0 +1,21 @@
+<div class="test-component" [style.backgroundColor]="selectedBackground1()">
+  <button
+    class="test-component__change-background-control"
+    (click)="toggleBackground()"
+  >
+    Toggle outer!
+  </button>
+  <button
+    class="test-component__change-background-control"
+    (click)="setBlueBackground()"
+  >
+    Toggle inner!
+  </button>
+
+  <div
+    class="test-component__content"
+    [style.backgroundColor]="selectedBackground2()"
+  >
+    Content
+  </div>
+</div>
